@@ -1,7 +1,7 @@
 <?php
 
-define('TELEGRAM_BOT_API_KEY', 'YOUR_API_KEY_HERE');
-define('TELEGRAM_CHAT_ID', 'YOUR_TELEGRAM_CHAT_ID_HERE'); // for sending messages to groups use number of chat_id with minus '-' before, example -1238735917
+define('TELEGRAM_BOT_API_KEY', getenv("TELEGRAM_BOT_API_KEY"));// 'YOUR_API_KEY_HERE');
+define('TELEGRAM_CHAT_ID', getenv('TELEGRAM_CHAT_ID')); // for sending messages to groups use number of chat_id with minus '-' before, example -1238735917
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $payload = json_decode($_POST['payload']);
