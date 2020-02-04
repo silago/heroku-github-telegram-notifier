@@ -1,6 +1,6 @@
 {
   "name": "Notify github commits",
   "description": "",
-  "repository": "https://github.com/silago/heroku-github-notifier",
+  "repository": "https://github.com/silago/heroku-github-telegram-notifier",
   "addons": []
 }
